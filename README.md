@@ -6,6 +6,8 @@ and Object Oriented Programming concepts to learn the implementation of programm
 This application is later upgraded with Node and Express at the backend and handlebars (template engine) are used at the front end. The functionalities are similar to the console
 based application but this one is built using proper authentication requiring an access token to access the data.
 
+### C++ code is on master branch, Node JS code is on main branch.
+
 # Setup
 1. gcc compiler
 2. vsCode/Code Blocks (modern IDE)
@@ -22,7 +24,7 @@ Necessary Header Files - <iostream>,
                          <cmath>,
                          <regex>
 
-Note: To run the latest application run npm install to install the dependencies.
+## Note: To run the latest application run npm install to install the dependencies.
 
 # How to run
 Click on the BankingApp.exe and the application will start.
