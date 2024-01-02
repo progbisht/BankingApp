@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{user.firstname}} Dashboard</title>
+    <link rel="stylesheet" href="css/styledashboard.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    {{>dashboardHeader}}
+
+
+          <div class="transaction-form" id="transForm">
+            <div class="row">
+              <div class="col-75">
+                <div class="container">
+                  <form action="/transactions" method="POST">
+                  
+                    <div class="row">
+                      <div class="col-50">
+                        <h3>Transaction Form</h3>
+                        <label ><i class="fa fa-user"></i> Username</label>
+                        <input type="text" name="username" >
+
+                        <label ><i class="fa fa-institution"></i> Account Number</label>
+                        <input type="text" name="recipientAccount" >
+                        
+
+                        <label >Amount</label>
+                        <input type="number" name="amount" >
+                        
+                        <label for="transaction-type">Transaction Type:</label>
+
+                        <select name="transactionType" id="transaction-type">
+                          <option value="">--Please choose an option--</option>
+                          <option value="Deposit">Deposit</option>
+                          <option value="Withdrawl">Withdrawl</option>
+                          
+                        </select>
+
+
+
+                        
+                      </div>
+                    </div>
+                    
+                    <input type="submit" value="Proceed" class="btn">
+                  </form>
+                </div>
+            </div>
+          </div>
+  
+
+    
+
+
+    {{!-- {{>footer}} --}}
+
+  </body>
+</html>

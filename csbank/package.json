@@ -1,0 +1,24 @@
+{
+  "name": "csbank",
+  "version": "1.0.0",
+  "homepage": "https://progbisht.github.io/csbank",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy":"npm run build",
+    "start": "node index.js",
+    "deploy":"gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.1"
+  }
+}

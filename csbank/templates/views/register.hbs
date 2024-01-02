@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  {{>headerLinks}}
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="">
+      </div>
+    </div>
+
+    {{>semiHeader}}
+    
+    <!-- login section starts -->
+    <div class="container-box">
+        <div class="wrapper-register">
+            
+            <div class="form-box register">
+              <h2>Registration</h2>
+              <form action="/register" method="POST">
+                  <div class="input-box-reg">
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-user-plus'></i></span>
+                      <input type="text" required, name="firstname" autocomplete="off">
+                      <label>First Name</label>
+                    </div>
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-user-plus'></i></span>
+                      <input type="text" required, name="lastname">
+                      <label>Last Name</label>
+                    </div>
+    
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bx-male' ></i></span>
+                      <input type="text" required, name="gender">
+                      <label>Gender</label>
+                    </div>
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bx-phone' ></i></span>
+                      <input type="number" required, name="phone">
+                      <label>Phone</label>
+                    </div>
+                
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bx-map' ></i></span>
+                      <input type="text" required, name="address">
+                      <label>Address</label>
+                    </div>
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-city' ></i></span>
+                      <input type="text" required, name="city">
+                      <label>City</label>
+                    </div>
+                  
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-map-pin' ></i></span>
+                      <input type="number" required, name="pin">
+                      <label>Pin</label>
+                    </div>
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-id-card'></i></span>
+                      <input type="number" required, name="adhaar">
+                      <label>Adhaar</label>
+                    </div>
+                  
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-user'></i></span>
+                      <input type="text" required, name="username">
+                      <label>Username</label>
+                    </div>
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bx-envelope' ></i></span>
+                      <input type="email" required, name="email">
+                      <label>Email</label>
+                    </div>
+                 
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                      <input type="password" required, name="password">
+                      <label>Password</label>
+                    </div>
+                    <div class="input-field">
+                      <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                      <input type="password" required, name="confirmpassword">
+                      <label>Confirm Password</label>
+                    </div>
+                    <div class="radio-field">
+                      <span class="icon"><i class='bx bxs-id-card'></i></span>
+                      <input type="radio" name="accountType" value="savings">
+                      <label>Savings Account</label>
+  
+                      <input type="radio" name="accountType" value="current">
+                      <label >Current Account</label>
+                      <!-- <input type="number" required, name="adhaar">
+                      <label>Account Type</label> -->
+                    </div>
+                  </div>
+                  <div class="remember-forgot">
+                      <label><input type="checkbox">I agree to the terms & conditions</label>
+                  </div>
+                  <button type="submit" class="btn">Register</button>
+                  <div class="login-register">
+                      <p>Already have an account? <a href="/login" class="login-link">Login</a></p>
+                  </div>
+              </form>
+          </div>
+
+        </div>
+    </div>
+
+    <!-- login section ends -->
+  </div>
+
+  {{>footer}}
+
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
+
+  <!-- icon -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{user.firstname}} Dashboard</title>
+    <link rel="stylesheet" href="css/styledashboard.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    {{>dashboardHeader}}
+
+    <div class="main-body">
+        <h2>Dashboard</h2>
+        <div class="promo_card">
+          <h1>Welcome {{user.firstname}} {{user.lastname}}</h1>
+          <span>{{user.account.accountType}} account</span>
+          <button>Learn More</button>
+        </div>
+
+        <div class="history_lists">
+          <div class="list1">
+            <div class="row">
+              <h4>User Profile</h4>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Name</td>
+                  <td>{{user.firstname}} {{user.lastname}}</td>
+                </tr>
+                <tr>
+                  <td>Gender</td>
+                  <td>{{user.gender}}</td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>{{user.email}}</td>
+                </tr>
+                <tr>
+                  <td>Phone No</td>
+                  <td>{{user.phone}}</td>
+                </tr>
+                <tr>
+                  <td>Adhaar</td>
+                  <td>{{user.adhaar}}</td>
+                </tr>
+                <tr>
+                  <td>Account No</td>
+                  <td>{{user.account.accountNumber}}</td>
+                </tr>
+                <tr>
+                  <td>Account Type</td>
+                  <td>{{user.account.accountType}}</td>
+                </tr>
+                 
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <h4>Account Balance</h4>
+
+        <div class="balance">
+          <i class="fa-solid fa-indian-rupee-sign icon"></i>
+          <div class="info">
+            <h5>INR</h5>
+            <span><i class="fa-solid fa-indian-rupee-sign"></i>{{user.account.balance}}</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+
+      
+
+        
+
+      
+    
+
+    {{!-- {{>footer}} --}}
+
+  </body>
+</html>
