@@ -1,7 +1,10 @@
-# BankingApp
+# BankingApp (Developed in C++ and Later in Node,Express and Handlebars)
 The banking application emulates the banking system and the services provided by the banks. Just like an online banking system which provides various functionalities
-such as deposits, withdrawls, transfers, update profile, delete account. This is a minor application (console based application) developed in C++ programming language
-and Object Oriented Programming concepts to learn the implementation of programming concepts in real worls situation.
+such as deposits, withdrawls, transfers, updating profiles, and deleting accounts. This is a minor application (console-based application) developed in C++ programming language
+and Object Oriented Programming concepts to learn the implementation of programming concepts in real-world situations.
+# Recent Version 
+This application is later upgraded with Node and Express at the backend and handlebars (template engine) are used at the front end. The functionalities are similar to the console
+based application but this one is built using proper authentication requiring an access token to access the data.
 
 # Setup
 1. gcc compiler
@@ -18,6 +21,8 @@ Necessary Header Files - <iostream>,
                          <ctime>,
                          <cmath>,
                          <regex>
+
+Note: To run the latest application run npm install to install the dependencies.
 
 # How to run
 Click on the BankingApp.exe and the application will start.
