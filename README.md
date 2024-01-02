@@ -28,6 +28,7 @@ Necessary Header Files - <iostream>,
 
 # How to run
 Click on the BankingApp.exe and the application will start.
+And for Nodejs code type node index to launch the server.
 
 # Working
 - The application starts with a master menu that provides user to either create a 'New Account' or 'Login'.
